@@ -18,10 +18,10 @@
     },
     "Rcpp": {
       "Package": "Rcpp",
-      "Version": "1.0.2",
+      "Version": "1.0.3",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "96a953a24b930fe455be0a5e78627d55"
+      "Hash": "9f1985842ec887e9aaf07140e426b82e"
     },
     "base64enc": {
       "Package": "base64enc",
@@ -127,6 +127,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "55f627741007cdb86b124a16183e6a9e"
+    },
+    "renv": {
+      "Package": "renv",
+      "Version": "0.8.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "54c5c0f4d9e93fa20d31fec2fa8bfe1c"
     },
     "rjson": {
       "Package": "rjson",
