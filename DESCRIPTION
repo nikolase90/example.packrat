@@ -1,5 +1,5 @@
-Package: example.packrat
-Title: Example of how to use packrat
+Package: example.renv
+Title: Example of how to use renv
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "First",
