@@ -49,12 +49,7 @@ jobs:
           sudo -s eval "$sysreqs"
 
       - name: Install dependencies
-        run: |
-          Rscript \
-          -e "install.packages('remotes')" \
-          -e "remotes::install_deps(dependencies = TRUE)" \ 
-          -e "remotes::install_cran('rcmdcheck')" \
-          -e "install.packages('yaml')"
+        run: Rscript -e "install.packages('remotes')" -e "remotes::install_deps(dependencies = TRUE)" -e "remotes::install_cran('rcmdcheck')" -e "install.packages('yaml')"
 
       - name: Check
         run: Rscript -e "rcmdcheck::rcmdcheck(args = yaml::yaml.load('${{ matrix.config.args }}'), error_on = 'warning', check_dir = 'check')"
