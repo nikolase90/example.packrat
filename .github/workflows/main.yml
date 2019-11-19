@@ -54,7 +54,7 @@ jobs:
           -e "install.packages('remotes')" \
           -e "remotes::install_deps(dependencies = TRUE)" \ 
           -e "remotes::install_cran('rcmdcheck') \
-          -e "remotes::install_cran('yaml')"
+          -e "install.packages('yaml')"
 
       - name: Check
         run: Rscript -e "rcmdcheck::rcmdcheck(args = yaml::yaml.load('${{ matrix.config.args }}'), error_on = 'warning', check_dir = 'check')"
